@@ -1,1 +1,25 @@
-<h1>Welcome to LPU</h1>
+<html>
+<head>
+<title>Bad HTML Page</title>
+<script>
+  // Inline JavaScript and potential XSS risk
+  document.write("<h1>Welcome</h1>");
+</script>
+</head>
+<body bgcolor="red" onload="alert('Hello!')">
+<center>
+<font size=7 color=green>Welcome to Bad Page</font><br>
+<img src="nonexistent.jpg" alt=""><br>
+<a href="javascript:alert('XSS')">Click me!</a><br>
+<table>
+  <tr>
+    <td>Row 1, Cell 1
+    <td>Row 1, Cell 2
+  <tr>
+    <td colspan="3">Row 2, Cell 1
+</table>
+<marquee behavior="scroll">Scrolling Text</marquee>
+<!-- Missing alt on image, using deprecated tags, inline JS, and broken structure -->
+</center>
+</body>
+</html>
